@@ -46,12 +46,12 @@
 								<li class="cbp-item graphic">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/1.jpg" alt="" />
+											<img src="img/works/501.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
-													<a href="img/works/1big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+													<a href="img/works/501.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -62,12 +62,12 @@
 								<li class="cbp-item web-design logo">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/2.jpg" alt="" />
+											<img src="img/works/502.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
-													<a href="img/works/2big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+													<a href="img/works/502.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -78,7 +78,7 @@
 								<li class="cbp-item graphic logo">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/3.jpg" alt="" />
+											<img src="img/works/503.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
@@ -95,13 +95,13 @@
 								<li class="cbp-item web-design graphic">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/4.jpg" alt="" />
+											<img src="img/works/504.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
 
-													<a href="img/works/4big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
+													<a href="img/works/504.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -112,13 +112,13 @@
 								<li class="cbp-item identity web-design">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/5.jpg" alt="" />
+											<img src="img/works/509.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
 
-													<a href="img/works/5big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
+													<a href="img/works/509.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -129,13 +129,13 @@
 								<li class="cbp-item identity web-design">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/6.jpg" alt="" />
+											<img src="img/works/510.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
 
-													<a href="img/works/6big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+													<a href="img/works/510.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -146,13 +146,13 @@
 								<li class="cbp-item graphic logo">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/7.jpg" alt="" />
+											<img src="img/works/511.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
 
-													<a href="img/works/7big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+													<a href="img/works/511.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
 												</div>
 											</div>
 										</div>
@@ -163,19 +163,53 @@
 								<li class="cbp-item graphic logo">
 									<div class="cbp-caption">
 										<div class="cbp-caption-defaultWrap">
-											<img src="img/works/8.jpg" alt="" />
+											<img src="img/works/513.jpg" alt="" />
 										</div>
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
 
-													<a href="img/works/8big.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+													<a href="img/works/513.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
 									<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+								</li>
+								<li class="cbp-item identity web-design">
+									<div class="cbp-caption">
+										<div class="cbp-caption-defaultWrap">
+											<img src="img/works/514.jpg" alt="" />
+										</div>
+										<div class="cbp-caption-activeWrap">
+											<div class="cbp-l-caption-alignCenter">
+												<div class="cbp-l-caption-body">
+
+													<a href="img/works/514.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
+									<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+								</li>
+								<li class="cbp-item identity web-design">
+									<div class="cbp-caption">
+										<div class="cbp-caption-defaultWrap">
+											<img src="img/works/516.jpg" alt="" />
+										</div>
+										<div class="cbp-caption-activeWrap">
+											<div class="cbp-l-caption-alignCenter">
+												<div class="cbp-l-caption-body">
+
+													<a href="img/works/516.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
+									<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
 								</li>
 							</ul>
 						</div>
