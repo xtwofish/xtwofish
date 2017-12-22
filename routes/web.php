@@ -20,6 +20,8 @@ Route::get('/home', function () {
 */
 
 
-Route::get('/',['as'=>'portfolio.index','uses'=> 'PortfolioController@portfolio']);
+Route::get('/',['as'=>'home.index','uses'=> 'HomeController@home']);
 
-Route::get('/contact',['as'=>'contact.index','uses'=> 'ContactController@contact']);
+Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
+
+Route::get('/apply',['as'=>'apply.index','uses'=> 'ApplyController@apply']);
