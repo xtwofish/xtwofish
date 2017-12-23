@@ -39,9 +39,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <ul class="topleft-info">
-                            <li><i class="fa fa-phone"></i> +62 088 999 123</li>
-                        </ul>
                     </div>
                     <div class="col-md-6">
                         <div id="sb-search" class="sb-search">
@@ -51,8 +48,6 @@
                                 <span class="sb-icon-search" title="Click to start searching"></span>
                             </form>
                         </div>
-
-
                     </div>
                 </div>
             </div>
