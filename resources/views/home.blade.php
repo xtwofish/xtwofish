@@ -39,12 +39,12 @@
 										<div class="cbp-caption-activeWrap">
 											<div class="cbp-l-caption-alignCenter">
 												<div class="cbp-l-caption-body">
-													<a href="img/works/501.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+													<a href="img/works/501.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="申請501教室">view larger</a>
 												</div>
 											</div>
 										</div>
 									</div>
-									<div class="cbp-l-grid-projects-title">Dashboard</div>
+									<div class="cbp-l-grid-projects-title">501教室</div>
 									<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
 								</li>
 								<li class="cbp-item web-design logo">
