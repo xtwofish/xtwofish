@@ -25,3 +25,5 @@ Route::get('/',['as'=>'home.index','uses'=> 'HomeController@home']);
 Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
 
 Route::get('/apply',['as'=>'apply.index','uses'=> 'ApplyController@apply']);
+
+Route::get('/register',['as'=>'register.index','uses'=> 'RegisterController@register']);
