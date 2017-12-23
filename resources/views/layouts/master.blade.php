@@ -66,7 +66,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.blade.php"><img src="{{asset('img/logo.png')}}" alt="" width="199" height="52" /></a>
+                    <a href="home.blade.php"><img src="{{asset('img/logo.png')}}" alt="" width="250" height="100" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
