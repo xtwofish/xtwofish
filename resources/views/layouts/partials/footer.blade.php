@@ -28,7 +28,7 @@
                     <h4>相關頁面</h4>
                     <ul class="link-list">
                         <li><a href="{{ route('home.index') }}">首頁</a></li>
-                        <li><a href="{{ route('applymanager.index') }}">申請表單</a></li>
+                        <li><a href="{{ route('applymanager.index') }}">申請</a></li>
                         <li><a href='{{ route('apply.index') }}'>申請管理</a></li>
                     </ul>
                 </div>
