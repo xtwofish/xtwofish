@@ -3,39 +3,33 @@
         <div class="row">
             <div class="col-sm-3 col-lg-3">
                 <div class="widget">
-                    <h4>Get in touch with us</h4>
-                    <address>
-                        <strong>Sailor company Inc</strong><br>
-                        Sailor suite room V124, DB 91<br>
-                        Someplace 71745 Earth </address>
+                    <h4>聯絡我們</h4>
+                    <strong>NCUT MIS</strong><br>
+                    <i class="fa fa-map-marker"></i>
+                         Address：No.57, Sec. 2, Zhongshan Rd.,<br>
+                        Taiping Dist., Taichung 41170, Taiwan (R.O.C.)
                     <p>
-                        <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-                        <i class="icon-envelope-alt"></i> email@domainname.com
+                        <i class="fa fa-phone"></i> Phone：(04)23924505 (分機表) <br>
                     </p>
                 </div>
             </div>
             <div class="col-sm-3 col-lg-3">
                 <div class="widget">
-                    <h4>Information</h4>
+                    <h4>聯絡資訊</h4>
                     <ul class="link-list">
-                        <li><a href="#">Press release</a></li>
-                        <li><a href="#">Terms and conditions</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Career center</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="https://github.com/s3A432058"><i class="fa fa-github"></i> 3A435058 陳欣妤</a></li>
+                        <li><a href="https://github.com/s3A432090"><i class="fa fa-github"></i> 3A435090 陳美妤</a></li>
                     </ul>
                 </div>
 
             </div>
             <div class="col-sm-3 col-lg-3">
                 <div class="widget">
-                    <h4>Pages</h4>
+                    <h4>相關頁面</h4>
                     <ul class="link-list">
-                        <li><a href="#">Press release</a></li>
-                        <li><a href="#">Terms and conditions</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Career center</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="{{ route('home.index') }}">首頁</a></li>
+                        <li><a href="{{ route('applymanager.index') }}">申請表單</a></li>
+                        <li><a href='{{ route('apply.index') }}'>申請管理</a></li>
                     </ul>
                 </div>
             </div>
@@ -58,26 +52,17 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="copyright">
-                        <p>&copy; NCUT MIS</p>
-                        <div class="credits">
-                            <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Sailor
-          -->
-                            <a href="https://github.com/xtwofish/xtwofish">網站資訊系統開發</a> by
-                            <a href="https://github.com/xtwofish/xtwofish">四資三乙 3A432058 陳欣妤 3A432090 陳美妤</a>
-                        </div>
+                        <p>&copy; NCUT MIS
+                            <a href="https://github.com/xtwofish/xtwofish"> 網站資訊系統開發</a>
+                            by 四資三乙 3A432058 陳欣妤 3A432090 陳美妤
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <ul class="social-network">
                         <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
                         <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://github.com/xtwofish/xtwofish" data-placement="top" title="GitHub"><i class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
             </div>
