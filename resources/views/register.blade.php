@@ -135,6 +135,7 @@
 							<h2>Please Sign Up <small>It's free and always will be.</small></h2>
 							<hr class="colorgraph">
 							<div class="row">
+
 								<div class="col-xs-12 col-sm-6 col-md-6">
 									<div class="form-group">
 										<input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="First Name" tabindex="1">
@@ -146,6 +147,7 @@
 									</div>
 								</div>
 							</div>
+
 							<div class="form-group">
 								<input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Display Name" tabindex="3">
 							</div>
