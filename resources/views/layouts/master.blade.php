@@ -39,6 +39,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
+
                     </div>
                     <div class="col-md-6">
                         <div id="sb-search" class="sb-search">
@@ -61,14 +62,17 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="home.blade.php"><img src="{{asset('img/logo.png')}}" alt="" width="250" height="100" /></a>
+                    <a href='{{ route('home.index') }}'><img src="{{asset('img/logo.png')}}" alt="" width="250" height="100" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href='{{ route('home.index') }}'>首頁</a></li>
                         <li><a href='{{ route('apply.index') }}'>申請</a></li>
                         <li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
+                        <li><a href='{{ route('login.index') }}'> | 登入</a></li>
                         <li><a href='{{ route('register.index') }}'>註冊</a></li>
+
+
 
                     </ul>
                 </div>
