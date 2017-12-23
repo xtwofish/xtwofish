@@ -68,6 +68,8 @@
                         <li><a href='{{ route('home.index') }}'>首頁</a></li>
                         <li><a href='{{ route('apply.index') }}'>申請</a></li>
                         <li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
+                        <li><a href='{{ route('register.index') }}'>註冊</a></li>
+
                     </ul>
                 </div>
             </div>
