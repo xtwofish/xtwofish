@@ -23,9 +23,9 @@
                         {{--教室--}}
                         <div class="form-group">
                             <select name="YourClassroom" class="form-control" >
-                                　<option>申請教室</option>
-                                　<option value="M501">M501</option>
-                                　<option value="M502">M502</option>
+                                <option>申請教室</option>
+                                <option value="M501">M501</option>
+                                <option value="M502">M502</option>
                                 <option value="M503">M503</option>
                                 <option value="M504">M504</option>
                                 <option value="M509">M509</option>
@@ -49,12 +49,12 @@
                         </div>
                         {{--手機--}}
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="手機號碼" data-rule="minlen:10" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="name" class="form-control" id="name" placeholder="手機號碼" data-rule="minlen:10" data-msg="Please enter at least 10 chars" />
                             <div class="validation"></div>
                         </div>
                         {{--開始時間--}}
                         <div class="form-group">
-                            <input type="time" name="name" class="form-control" id="name"  />
+                            <input type="time" name="name" class="form-control" id="name" placeholder="上午 09:00" data-msg="Please enter at least 4 chars" />
                             <div class="validation"></div>
                         </div>
                         {{--結束時間--}}
