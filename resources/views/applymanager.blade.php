@@ -4,45 +4,214 @@
 
 @section('content')
 
-	
-		<section id="content">
+	<section id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h4 class="heading">Recent Works</h4>
 
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<h2>Classroom Application Form </h2>
-						<h9>Want to borrow a classroom? Come here and fill out the following information</h9>
-						<hr class="colorgraph">
-						<div id="sendmessage">Your message has been sent. Thank you!</div>
-						<div id="errormessage"></div>
-						<form action="" method="post" role="form" class="contactForm">
-							<div class="form-group">
-								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-								<div class="validation"></div>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-								<div class="validation"></div>
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-								<div class="validation"></div>
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-								<div class="validation"></div>
-							</div>
-
-							<div class="text-center"><button type="submit" class="btn btn-theme btn-block btn-md">Send Message</button></div>
-						</form>
-						<hr class="colorgraph">
-
+					<div id="filters-container" class="cbp-l-filters-button">
+						<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
+							<div class="cbp-filter-counter"></div>
+						</div>
+						<div data-filter=".identity" class="cbp-filter-item">Identity
+							<div class="cbp-filter-counter"></div>
+						</div>
+						<div data-filter=".web-design" class="cbp-filter-item">Web Design
+							<div class="cbp-filter-counter"></div>
+						</div>
+						<div data-filter=".graphic" class="cbp-filter-item">Graphic
+							<div class="cbp-filter-counter"></div>
+						</div>
+						<div data-filter=".logo" class="cbp-filter-item">Logo
+							<div class="cbp-filter-counter"></div>
+						</div>
 					</div>
+
+
+					<div id="grid-container" class="cbp-l-grid-projects">
+						<ul>
+							<li class="cbp-item graphic">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/501.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+												<a href="img/works/501.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">Dashboard</div>
+								<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+							</li>
+							<li class="cbp-item web-design logo">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/502.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+												<a href="img/works/502.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">World Clock Widget</div>
+								<div class="cbp-l-grid-projects-desc">Logo / Web Design</div>
+							</li>
+							<li class="cbp-item graphic logo">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/503.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view video</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">To-Do Dashboard</div>
+								<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+							</li>
+							<li class="cbp-item web-design graphic">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/504.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="img/works/504.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">Events and More</div>
+								<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+							</li>
+							<li class="cbp-item identity web-design">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/509.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="img/works/509.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">WhereTO App</div>
+								<div class="cbp-l-grid-projects-desc">Web Design / Identity</div>
+							</li>
+							<li class="cbp-item identity web-design">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/510.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="img/works/510.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
+								<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+							</li>
+							<li class="cbp-item graphic logo">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/511.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="img/works/511.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
+								<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+							</li>
+							<li class="cbp-item graphic logo">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/513.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="img/works/513.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
+								<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+							</li>
+							<li class="cbp-item identity web-design">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/514.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="img/works/514.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
+								<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+							</li>
+							<li class="cbp-item identity web-design">
+								<div class="cbp-caption">
+									<div class="cbp-caption-defaultWrap">
+										<img src="img/works/516.jpg" alt="" />
+									</div>
+									<div class="cbp-caption-activeWrap">
+										<div class="cbp-l-caption-alignCenter">
+											<div class="cbp-l-caption-body">
+
+												<a href="img/works/516.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
+								<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cbp-l-loadMore-button">
+						<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
+					</div>
+
 				</div>
 			</div>
-		</section>
-{{--<footer></footer>--}}
-	</div>
+		</div>
+	</section>
+
+	{{--<footer></footer>--}}
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
 	<!-- javascript
     ================================================== -->
@@ -58,34 +227,10 @@
 	<script src="js/jquery.cubeportfolio.min.js"></script>
 	<script src="js/google-code-prettify/prettify.js"></script>
 	<script src="js/animate.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
 	<script src="js/custom.js"></script>
-	<script>
-		jQuery(document).ready(function($) {
-
-			//Google Map
-			var get_latitude = $('#google-map').data('latitude');
-			var get_longitude = $('#google-map').data('longitude');
-
-			function initialize_google_map() {
-				var myLatlng = new google.maps.LatLng(get_latitude, get_longitude);
-				var mapOptions = {
-					zoom: 14,
-					scrollwheel: false,
-					center: myLatlng
-				};
-				var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-				var marker = new google.maps.Marker({
-					position: myLatlng,
-					map: map
-				});
-			}
-			google.maps.event.addDomListener(window, 'load', initialize_google_map);
-
-		});
-	</script>
-
-	<script src="contactform/contactform.js"></script>
 
 
+	</body>
+
+	</html>
 @endsection

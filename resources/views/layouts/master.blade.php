@@ -66,8 +66,8 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
                         <li><a href='{{ route('home.index') }}'>首頁</a></li>
-                        <li><a href='{{ route('applymanager.index') }}'>申請</a></li>
-                        <li><a href='{{ route('apply.index') }}'>申請管理</a></li>
+                        <li><a href='{{ route('apply.index') }}'>申請</a></li>
+                        <li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
                     </ul>
                 </div>
             </div>
