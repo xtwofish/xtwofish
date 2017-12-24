@@ -64,14 +64,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-						<a class="navbar-brand" href="index.blade.php"><img src="img/logo.png" alt="" width="199" height="52" /></a>
+						<a class="navbar-brand" href="admin.blade.php"><img src="img/logo.png" alt="" width="199" height="52" /></a>
 					</div>
 					<div class="navbar-collapse collapse ">
 						<ul class="nav navbar-nav">
 							<li class="dropdown">
 								<a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Home <i class="fa fa-angle-down"></i></a>
 								<ul class="dropdown-menu">
-									<li><a href="index.blade.php">Home slider 1</a></li>
+									<li><a href="admin.blade.php">Home slider 1</a></li>
 									<li><a href="index2.html">Home slider 2</a></li>
 
 								</ul>
@@ -92,8 +92,8 @@
 											<li><a href="comingsoon.html">Coming soon</a></li>
 											<li><a href="search-result.html">Search result</a></li>
 											<li><a href="404.html">404</a></li>
-											<li><a href="register.html">Register</a></li>
-											<li><a href="login.html">Login</a></li>
+											<li><a href="registermanager.blade.php">Register</a></li>
+											<li><a href="loginmanager.blade.php">Login</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -155,7 +155,7 @@
 							<hr class="colorgraph">
 							<div class="row">
 								<div class="col-xs-12 col-md-6"><input type="submit" value="Sign in" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
-								<div class="col-xs-12 col-md-6">Don't have an account? <a href="register.html">Register</a></div>
+								<div class="col-xs-12 col-md-6">Don't have an account? <a href="registermanager.blade.php">Register</a></div>
 							</div>
 						</form>
 					</div>
