@@ -38,14 +38,14 @@
                                     　<option>申請教室</option>
                                     　<option value="M501">M501</option>
                                     　<option value="M502">M502</option>
-                                    <option value="M503">M503</option>
-                                    <option value="M504">M504</option>
-                                    <option value="M509">M509</option>
-                                    <option value="M510">M510</option>
-                                    <option value="M511">M511</option>
-                                    <option value="M513">M512</option>
-                                    <option value="M514">M514</option>
-                                    <option value="M516">M516</option>
+                                      <option value="M503">M503</option>
+                                      <option value="M504">M504</option>
+                                      <option value="M509">M509</option>
+                                      <option value="M510">M510</option>
+                                      <option value="M511">M511</option>
+                                      <option value="M513">M512</option>
+                                      <option value="M514">M514</option>
+                                      <option value="M516">M516</option>
                                 </select>
                             </div>
                         </div>
@@ -77,14 +77,16 @@
                             <input type="text" name="name" class="form-control"  id="name" placeholder="班級" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                             <div class="validation"></div>
                         </div>
+                        </div>
                         {{--姓名--}}
+                        <div class="col-xs-24 col-sm-12 col-md-12">
                         <div class="form-group">
                             <input type="text" name="name" class="form-control" id="name" placeholder="姓名" data-rule="minlen:2" data-msg="Please enter at least 4 chars" />
                             <div class="validation"></div>
                         </div>
                         {{--手機--}}
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" id="name" placeholder="手機號碼" data-rule="minlen:10" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="name" class="form-control" id="name" placeholder="手機號碼" data-rule="minlen:10" data-msg="Please enter at least 10 chars" />
                             <div class="validation"></div>
                         </div>
                         {{--申請事由--}}
@@ -96,7 +98,6 @@
                         <div class="text-center"><button type="submit" class="btn btn-theme btn-block btn-md">送出</button></div>
                     </form>
                     <hr class="colorgraph">
-
                 </div>
             </div>
         </div>
