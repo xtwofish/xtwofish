@@ -35,3 +35,5 @@ Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
 Route::get('/cards',['as'=>'cards.index','uses'=> 'CardsController@cards']);
 
 Route::get('/tables',['as'=>'tables.index','uses'=> 'TablesController@tables']);
+
+Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);

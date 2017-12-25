@@ -39,6 +39,13 @@
                     <span class="nav-link-text">教室狀態</span>
                 </a>
             </li>
+            {{--歷史紀錄--}}
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="{{ route('history.index') }}">
+                    <span class="nav-link-text">歷史紀錄</span>
+                </a>
+            </li>
+
         </ul>
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">
