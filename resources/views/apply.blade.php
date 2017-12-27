@@ -96,7 +96,9 @@
                         </div>
 
                         <div class="text-center"><button type="submit" class="btn btn-theme btn-block btn-md">送出</button></div>
+                        </div>
                     </form>
+
                     <hr class="colorgraph">
                 </div>
             </div>
