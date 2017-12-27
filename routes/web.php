@@ -37,3 +37,5 @@ Route::get('/cards',['as'=>'cards.index','uses'=> 'CardsController@cards']);
 Route::get('/tables',['as'=>'tables.index','uses'=> 'TablesController@tables']);
 
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
+
+Route::post('/apply',['as' => 'apply.store', 'uses' => 'ApplyController@store']);
