@@ -15,6 +15,18 @@ class CreateApplysTable extends Migration
     {
         Schema::create('applys', function (Blueprint $table) {
             $table->increments('id');
+
+            //建立資料欄位及型態
+            $table->unsignedInteger('user_id');
+            $table->string('class_id');
+            $table->string('user_class');
+            $table->string('user_name');
+            $table->string('user_phone');
+            $table->string('req_date');
+            $table->string('req_start');
+            $table->string('req_end');
+            $table->string('req_reason');
+
             $table->timestamps();
         });
     }
