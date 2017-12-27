@@ -1,24 +1,52 @@
 
 <!DOCTYPE html>
 {{--<html lang="{{ app()->getLocale() }}">--}}
+{{--<head>--}}
+    {{--<meta charset="utf-8">--}}
+    {{--<meta http-equiv="X-UA-Compatible" content="IE=edge">--}}
+    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
+
+    {{--<!-- CSRF Token -->--}}
+    {{--<meta name="csrf-token" content="{{ csrf_token() }}">--}}
+
+    {{--<title>{{ config('app.name', 'Laravel') }}</title>--}}
+
+    {{--<!-- Styles -->--}}
+    {{--<link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
+{{--</head>--}}
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Classroom Application-TwoFishWorld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bootstrap 3 template for corporate business" />
+    <!-- css -->
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('plugins/flexslider/flexslider.css')}}" rel="stylesheet" media="screen" />
+    <link href="{{asset('css/cubeportfolio.min.css')}}" rel="stylesheet" />
+    <link href="{{asset('css/style.css')}}" rel="stylesheet" />
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <!-- Theme skin -->
+    <link id="t-colors" href="skins/default.css" rel="stylesheet" />
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- boxed bg -->
+    <link id="bodybg" href="bodybg/bg10.css" rel="stylesheet" type="text/css" />
+
+    <!-- =======================================================
+    Theme Name: Sailor
+    Theme URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+    ======================================================= -->
+
+
 </head>
+
 <body>
     <div id="app">
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
-                <div class="navbar-header">
+                {{--<div class="navbar-header">--}}
 
                     {{--<!-- Collapsed Hamburger -->--}}
                     {{--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">--}}
@@ -32,7 +60,7 @@
                     {{--<a class="navbar-brand" href="{{ url('/') }}">--}}
                         {{--{{ config('app.name', 'Laravel') }}--}}
                     {{--</a>--}}
-                </div>
+                {{--</div>--}}
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
