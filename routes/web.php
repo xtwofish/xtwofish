@@ -20,7 +20,7 @@ Route::get('/home', function () {
 */
 
 
-Route::get('/',['as'=>'home.index','uses'=> 'HomeController@home']);
+Route::get('/',['as'=>'house.index','uses'=> 'HouseController@house']);
 
 Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
 

@@ -62,11 +62,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href='{{ route('home.index') }}'><img src="{{asset('img/logo.png')}}" alt="" width="250" height="100" /></a>
+                    <a href='{{ route('house.index') }}'><img src="{{asset('img/logo.png')}}" alt="" width="250" height="100" /></a>
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li><a href='{{ route('home.index') }}'>首頁</a></li>
+                        <li><a href='{{ route('house.index') }}'>首頁</a></li>
                         <li><a href='{{ route('apply.index') }}'>申請</a></li>
                         <li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
                         <li><a href='{{ route('login.index') }}'> | 登入</a></li>
