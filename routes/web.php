@@ -34,6 +34,7 @@ Route::get('/tables',['as'=>'tables.index','uses'=> 'TablesController@tables']);
 
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
 
+
 Route::get('/house',['as'=>'house.index','uses'=> 'HouseController@house']);
 Auth::routes();
 
@@ -42,3 +43,6 @@ Route::auth();
 Auth::routes();
 
 Route::get('/home', 'HouseController@house')->name('house');
+
+Route::post('/apply',['as' => 'apply.store', 'uses' => 'ApplyController@store']);
+
