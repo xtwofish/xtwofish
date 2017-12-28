@@ -28,7 +28,7 @@
                         </div>
                     </div>
 
-
+                    {{--501--}}
                     <div id="grid-container" class="cbp-l-grid-projects">
                         <ul>
                             <li class="cbp-item graphic">
@@ -37,16 +37,17 @@
                                         <img src="img/works/501.jpg" alt="" />
                                     </div>
                                     <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <a href="img/works/501.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="申請501教室">view larger</a>
-                                            </div>
-                                        </div>
+                                    <div class="cbp-l-caption-alignCenter">
+                                    <div class="cbp-l-caption-body">
+                                    <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
+                                    </div>
+                                    </div>
                                     </div>
                                 </div>
                                 <div class="cbp-l-grid-projects-title">501教室</div>
-                                <div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+
                             </li>
+                            {{--502--}}
                             <li class="cbp-item web-design logo">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -55,14 +56,15 @@
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
-                                                <a href="img/works/502.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
+                                                <a href='{{ route('two.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">World Clock Widget</div>
-                                <div class="cbp-l-grid-projects-desc">Logo / Web Design</div>
+                                <div class="cbp-l-grid-projects-title">502教室</div>
+
                             </li>
+                            {{--503--}}
                             <li class="cbp-item graphic logo">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -72,14 +74,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view video</a>
+                                                <a href='{{ route('three.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">To-Do Dashboard</div>
-                                <div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+                                <div class="cbp-l-grid-projects-title">503教室</div>
+
                             </li>
+                            {{--504--}}
                             <li class="cbp-item web-design graphic">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -89,14 +92,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="img/works/504.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
+                                                <a href='{{ route('four.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">Events and More</div>
-                                <div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
+                                <div class="cbp-l-grid-projects-title">504教室</div>
+
                             </li>
+                            {{--509--}}
                             <li class="cbp-item identity web-design">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -106,14 +110,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="img/works/509.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
+                                                <a href='{{ route('nine.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">WhereTO App</div>
-                                <div class="cbp-l-grid-projects-desc">Web Design / Identity</div>
+                                <div class="cbp-l-grid-projects-title">509教室</div>
+
                             </li>
+                            {{--510--}}
                             <li class="cbp-item identity web-design">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -123,14 +128,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="img/works/510.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-                                <div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+                                <div class="cbp-l-grid-projects-title">510教室</div>
+
                             </li>
+                            {{--511--}}
                             <li class="cbp-item graphic logo">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -140,14 +146,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="img/works/511.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
-                                <div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+                                <div class="cbp-l-grid-projects-title">511教室</div>
+
                             </li>
+                            {{--513--}}
                             <li class="cbp-item graphic logo">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -157,14 +164,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="img/works/513.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
+                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
-                                <div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
+                                <div class="cbp-l-grid-projects-title">513教室</div>
+
                             </li>
+                            {{--514--}}
                             <li class="cbp-item identity web-design">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -174,14 +182,15 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="img/works/514.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-                                <div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+                                <div class="cbp-l-grid-projects-title">514教室</div>
+
                             </li>
+                            {{--516--}}
                             <li class="cbp-item identity web-design">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
@@ -191,13 +200,13 @@
                                         <div class="cbp-l-caption-alignCenter">
                                             <div class="cbp-l-caption-body">
 
-                                                <a href="img/works/516.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-                                <div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
+                                <div class="cbp-l-grid-projects-title">516教室</div>
+
                             </li>
                         </ul>
                     </div>

@@ -15,7 +15,7 @@ class ApplymanagerController extends Controller
     public function index()
     {
         $applys=Apply::all();
-//        $applys=Apply::where('user_name', '咪咪')->get();
+//        $applys=Apply::where('class_id', 'M510')->get();
 //        $data=['applys'=>$applys];
         return view('applymanager',compact('applys'));
     }

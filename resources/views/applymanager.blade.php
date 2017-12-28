@@ -122,7 +122,7 @@
 								<form action="{{ route('applymanager.destroy', $apply->id) }}" method="POST">
 									{{ csrf_field() }}
 									{{ method_field('DELETE') }}
-									<button class="btn btn-link">取消申請</button>
+									<button class="btn btn-success btn-link">取消申請</button>
 								</form>
 							</td>
 						</tr>
