@@ -46,3 +46,9 @@ Route::get('/home', 'HouseController@house')->name('house');
 
 Route::post('/apply',['as' => 'apply.store', 'uses' => 'ApplyController@store']);
 
+Route::get('/applymanager' , ['as' => 'applymanager.index' , 'uses' => 'ApplymanagerController@index']);
+
+Route::delete('applymanager/{id}',['as'=>'applymanager.destroy','uses'=>'ApplymanagerController@destroy']);
+
+
+

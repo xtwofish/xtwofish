@@ -1,236 +1,181 @@
-@extends('layouts.master')
+@include('layouts.app')
+		<!DOCTYPE html>
+<html lang="en">
 
-@section('title', 'Clean Blog')
+<head>
+	<meta charset="utf-8">
+	<title>Classroom Application-TwoFishWorld</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Bootstrap 3 template for corporate business" />
+	<!-- css -->
 
-@section('content')
+	<link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
+	<link href="{{asset('plugins/flexslider/flexslider.css')}}" rel="stylesheet" media="screen" />
+	<link href="{{asset('css/cubeportfolio.min.css')}}" rel="stylesheet" />
+	<link href="{{asset('css/style.css')}}" rel="stylesheet" />
 
-	<section id="content">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<h4 class="heading">Recent Works</h4>
+	<!-- Theme skin -->
+	<link id="t-colors" href="skins/default.css" rel="stylesheet" />
 
-					<div id="filters-container" class="cbp-l-filters-button">
-						<div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
-							<div class="cbp-filter-counter"></div>
-						</div>
-						<div data-filter=".identity" class="cbp-filter-item">Identity
-							<div class="cbp-filter-counter"></div>
-						</div>
-						<div data-filter=".web-design" class="cbp-filter-item">Web Design
-							<div class="cbp-filter-counter"></div>
-						</div>
-						<div data-filter=".graphic" class="cbp-filter-item">Graphic
-							<div class="cbp-filter-counter"></div>
-						</div>
-						<div data-filter=".logo" class="cbp-filter-item">Logo
-							<div class="cbp-filter-counter"></div>
+	<!-- boxed bg -->
+	<link id="bodybg" href="bodybg/bg2.css" rel="stylesheet" type="text/css" />
+
+	<!-- =======================================================
+    Theme Name: Sailor
+    Theme URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+    ======================================================= -->
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+		<div class="top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+
+					</div>
+					<div class="col-md-6">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search" title="Click to start searching"></span>
+							</form>
 						</div>
 					</div>
-
-
-					<div id="grid-container" class="cbp-l-grid-projects">
-						<ul>
-							<li class="cbp-item graphic">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/501.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-												<a href="img/works/501.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Dashboard<br>by Paul Flavius Nechita">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">Dashboard</div>
-								<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
-							</li>
-							<li class="cbp-item web-design logo">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/502.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-												<a href="img/works/502.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock Widget<br>by Paul Flavius Nechita">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">World Clock Widget</div>
-								<div class="cbp-l-grid-projects-desc">Logo / Web Design</div>
-							</li>
-							<li class="cbp-item graphic logo">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/503.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view video</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">To-Do Dashboard</div>
-								<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
-							</li>
-							<li class="cbp-item web-design graphic">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/504.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="img/works/504.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">Events and More</div>
-								<div class="cbp-l-grid-projects-desc">Web Design / Graphic</div>
-							</li>
-							<li class="cbp-item identity web-design">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/509.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="img/works/509.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">WhereTO App</div>
-								<div class="cbp-l-grid-projects-desc">Web Design / Identity</div>
-							</li>
-							<li class="cbp-item identity web-design">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/510.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="img/works/510.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-								<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
-							</li>
-							<li class="cbp-item graphic logo">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/511.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="img/works/511.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
-								<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
-							</li>
-							<li class="cbp-item graphic logo">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/513.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="img/works/513.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music for iPad<br>by Tiberiu Neamu">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">Seemple* Music for iPad</div>
-								<div class="cbp-l-grid-projects-desc">Graphic / Logo</div>
-							</li>
-							<li class="cbp-item identity web-design">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/514.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="img/works/514.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-								<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
-							</li>
-							<li class="cbp-item identity web-design">
-								<div class="cbp-caption">
-									<div class="cbp-caption-defaultWrap">
-										<img src="img/works/516.jpg" alt="" />
-									</div>
-									<div class="cbp-caption-activeWrap">
-										<div class="cbp-l-caption-alignCenter">
-											<div class="cbp-l-caption-body">
-
-												<a href="img/works/516.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="cbp-l-grid-projects-title">Ski * Buddy</div>
-								<div class="cbp-l-grid-projects-desc">Identity / Web Design</div>
-							</li>
-						</ul>
-					</div>
-
-					<div class="cbp-l-loadMore-button">
-						<a href="ajax/loadMore.html" class="cbp-l-loadMore-button-link">LOAD MORE</a>
-					</div>
-
 				</div>
 			</div>
 		</div>
-	</section>
 
-	{{--<footer></footer>--}}
-	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-	<!-- javascript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.appear.js"></script>
-	<script src="js/stellar.js"></script>
-	<script src="js/classie.js"></script>
-	<script src="js/uisearch.js"></script>
-	<script src="js/jquery.cubeportfolio.min.js"></script>
-	<script src="js/google-code-prettify/prettify.js"></script>
-	<script src="js/animate.js"></script>
-	<script src="js/custom.js"></script>
+		<div class="navbar navbar-default navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href='{{ route('house.index') }}'><img src="{{asset('img/logo.png')}}" alt="" width="250" height="100" /></a>
+				</div>
+				<div class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li><a href='{{ route('house.index') }}'>首頁</a></li>
+						<li><a href='{{ route('apply.index') }}'>申請</a></li>
+						<li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
 
 
-	</body>
 
-	</html>
-@endsection
+	<!-- Breadcrumbs-->
+	<!-- Example DataTables Card-->
+
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="table-responsive">
+				<table class="table table-bordered table-hover">
+					<thead>
+					<tr>
+						<th width="30" style="text-align: center">#</th>
+						<th>教室</th>
+						<th>班級</th>
+						<th>姓名</th>
+						<th>電話</th>
+						<th>日期</th>
+						<th>開始時間</th>
+						<th>結束時間</th>
+						<th>申請事由</th>
+						<th width="100" style="text-align: center">功能</th>
+					</tr>
+					</thead>
+					<tbody>
+					@foreach($applys as $apply)
+						<tr>
+							<td>{{$apply->id}}</td>
+							<td>{{$apply->class_id}}</td>
+							<td>{{$apply->user_class}}</td>
+							<td>{{$apply->user_name}}</td>
+							<td>{{$apply->user_phone}}</td>
+							<td>{{$apply->req_date}}</td>
+							<td>{{$apply->req_start}}</td>
+							<td>{{$apply->req_end}}</td>
+							<td>{{$apply->req_reason}}</td>
+							<td>
+								{{--<a href="{{route('applymanager.index',$apply->id)}}">編輯</a>--}}
+								{{--/--}}
+								<form action="{{ route('applymanager.destroy', $apply->id) }}" method="POST">
+									{{ csrf_field() }}
+									{{ method_field('DELETE') }}
+									<button class="btn btn-link">取消申請</button>
+								</form>
+							</td>
+						</tr>
+					@endforeach
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- /.container-fluid-->
+	<!-- /.content-wrapper-->
+
+	<!-- Scroll to Top Button-->
+	<a class="scroll-to-top rounded" href="#page-top">
+		<i class="fa fa-angle-up"></i>
+	</a>
+	<!-- Logout Modal-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+				<div class="modal-footer">
+					<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+					<a class="btn btn-primary" href="loginmanager.blade.php">Logout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Bootstrap core JavaScript-->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- Core plugin JavaScript-->
+	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	<!-- Page level plugin JavaScript-->
+	<script src="vendor/datatables/jquery.dataTables.js"></script>
+	<script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+	<!-- Custom scripts for all pages-->
+	<script src="js/sb-admin.min.js"></script>
+	<!-- Custom scripts for this page-->
+	<script src="js/sb-admin-datatables.min.js"></script>
+</div>
+</body>
+
+</html>
+
+@include('layouts.partials.footer')
+</div>
+
+
+
