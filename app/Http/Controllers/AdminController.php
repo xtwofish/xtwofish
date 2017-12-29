@@ -14,7 +14,8 @@ class AdminController extends Controller
     }
 
     public function Show(){
-        $applys=Apply::all();
+//        $applys=Apply::all();
+        $applys=Apply::where('status', '0')->get();
         return view('admin',compact('applys'));
     }
 
@@ -24,7 +25,8 @@ class AdminController extends Controller
         $fix->status=true;
         $fix->save();
         $applys = Apply::all()->where('id',$request->id);
-        return view('admin',compact('applys'));
+//        return view('admin',compact('applys'));
+        return redirect()->route('admin.index');
 
     }
 
