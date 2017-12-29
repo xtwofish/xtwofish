@@ -21,16 +21,16 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="{{ route('tables.index') }}">管理後臺</a>
+    <a class="navbar-brand" href="{{ route('admin.index') }}">管理後臺</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-           {{--審核申請--}}
+            {{--審核申請--}}
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="{{ route('tables.index') }}">
-                  <span class="nav-link-text">審核申請</span>
+                <a class="nav-link" href="{{ route('admin.index') }}">
+                    <span class="nav-link-text">審核申請</span>
                 </a>
             </li>
             {{--教室狀態--}}
@@ -154,6 +154,6 @@
 <div class="content-wrapper">
     <div class="container-fluid">
 
-@yield('content')
+        @yield('content')
     </div>
 </div>
