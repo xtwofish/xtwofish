@@ -25,7 +25,7 @@ class CreateApplysTable extends Migration
             $table->string('req_date');
             $table->string('req_start');
             $table->string('req_end');
-            $table->string('req_reason');
+            $table->string('req_reason')->nullable();
             $table->boolean('status')->default(0);
 
             $table->timestamps();
