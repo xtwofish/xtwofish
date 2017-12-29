@@ -8,13 +8,18 @@ use Illuminate\Http\Request;
 
 class ApplyController extends Controller
 {
+
     public function apply()
     {
-
-        $user=Auth::user();
-        $names=$user['name'];
-        return view('apply',compact('names'));
+        return view('apply');
     }
+//    public function zz()
+//    {
+//
+//        $user=Auth::user();
+//        $names=$user['name'];
+//        return redirect()->route('apply.index');
+//    }
 
     public function store(Request $request)
     {

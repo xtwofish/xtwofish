@@ -87,15 +87,8 @@
                         {{--姓名--}}
                         <div class="col-xs-24 col-sm-12 col-md-12">
                             <div class="form-group">
-                                <Input name="user_name" class="form-control" placeholder="請輸入姓名" >
+                                <Input name="user_name" class="form-control" placeholder="請輸入姓名" value="{{ Auth::user()->name }}">
                             </div>
-                            {{--@if (is_array($names))--}}
-                            {{--@foreach( $names as $name)--}}
-                                    {{--<div class="form-group">--}}
-                                        {{--<Input name="user_name" class="form-control" placeholder="請輸入姓名" value="{{$name->name}}">--}}
-                                    {{--</div>--}}
-                                {{--@endforeach--}}
-                            {{--@endif--}}
                             {{--手機--}}
                             <div class="form-group">
                                 <input name="user_phone" class="form-control" placeholder="請輸入電話">
