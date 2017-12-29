@@ -42,7 +42,8 @@
                                     </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">501教室</div>
+                                <div class="cbp-l-grid-projects-title">501</div>
+                                <div class="cbp-l-grid-projects-desc">一般教室</div>
 
                             </li>
                             {{--502--}}
@@ -59,8 +60,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">502教室</div>
-
+                                <div class="cbp-l-grid-projects-title">502</div>
+                                <div class="cbp-l-grid-projects-desc">一般教室</div>
                             </li>
                             {{--503--}}
                             <li class="cbp-item graphic general">
@@ -77,8 +78,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">503教室</div>
-
+                                <div class="cbp-l-grid-projects-title">503</div>
+                                <div class="cbp-l-grid-projects-desc">一般教室</div>
                             </li>
                             {{--504--}}
                             <li class="cbp-item web-design general">
@@ -95,8 +96,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">504教室</div>
-
+                                <div class="cbp-l-grid-projects-title">504</div>
+                                <div class="cbp-l-grid-projects-desc">一般教室</div>
                             </li>
                             {{--509--}}
                             <li class="cbp-item identity topic">
@@ -113,8 +114,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">509教室</div>
-
+                                <div class="cbp-l-grid-projects-title">509</div>
+                                <div class="cbp-l-grid-projects-desc">專題教室</div>
                             </li>
                             {{--510--}}
                             <li class="cbp-item identity topic">
@@ -131,8 +132,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">510教室</div>
-
+                                <div class="cbp-l-grid-projects-title">510</div>
+                                <div class="cbp-l-grid-projects-desc">專題教室</div>
                             </li>
                             {{--511--}}
                             <li class="cbp-item graphic computer">
@@ -149,8 +150,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">511教室</div>
-
+                                <div class="cbp-l-grid-projects-title">511</div>
+                                <div class="cbp-l-grid-projects-desc">電腦教室</div>
                             </li>
                             {{--513--}}
                             <li class="cbp-item graphic computer">
@@ -167,8 +168,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">513教室</div>
-
+                                <div class="cbp-l-grid-projects-title">513</div>
+                                <div class="cbp-l-grid-projects-desc">電腦教室</div>
                             </li>
                             {{--514--}}
                             <li class="cbp-item identity computer">
@@ -185,8 +186,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">514教室</div>
-
+                                <div class="cbp-l-grid-projects-title">514</div>
+                                <div class="cbp-l-grid-projects-desc">電腦教室</div>
                             </li>
                             {{--516--}}
                             <li class="cbp-item identity topic">
@@ -203,8 +204,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">516教室</div>
-
+                                <div class="cbp-l-grid-projects-title">516</div>
+                                <div class="cbp-l-grid-projects-desc">專題教室</div>
                             </li>
                         </ul>
                     </div>
