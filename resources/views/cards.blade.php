@@ -4,7 +4,12 @@
 
 @section('content')
       <!-- Breadcrumbs-->
-           <h1>教室狀態</h1>
+      <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+              <a href="#">管理後臺</a>
+          </li>
+          <li class="breadcrumb-item active">教室狀態</li>
+      </ol>
       <hr>
       <!-- Icon Cards-->
       <div class="row">
