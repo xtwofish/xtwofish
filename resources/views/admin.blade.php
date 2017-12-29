@@ -61,22 +61,9 @@
               <td>{{$apply->req_start}}</td>
               <td>{{$apply->req_end}}</td>
               <td>{{$apply->req_reason}}</td>
-              <td>{{($apply->status)?'yes':'not'}}</td>
+              <td>{{($apply->status)?'審核成功':'尚未審核'}}</td>
               <td>
-                {{--<form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST">--}}
-                {{--{{ csrf_field() }}--}}
-                {{--{{ method_field('DELETE') }}--}}
-                {{--<button class="btn btn-link">刪除</button>--}}
-                {{--</form>--}}
-                {{--/--}}
-                <form method="post" action="/change">
-                  <input type="hidden" name="visitaID" value="$applys->id"/>
-                  <button class="btn btn-lg btn-success" type="submit">
-                    update
-                  </button>
-                </form>
-                {{--<button class="btn btn-success btn-update" data-id="{{$apply->status}}">update</button>--}}
-
+                <a href ="{{route('admin.status', ['id'=>$apply->id])}}"class="btn btn-xs btn-white" role="button">check</a>
               </td>
             </tr>
           @endforeach
@@ -93,7 +80,7 @@
   <footer class="sticky-footer">
     <div class="container">
       <div class="text-center">
-        <small>Copyright © Your Website 2017</small>
+        <small>Copyright c Your Website 2017</small>
       </div>
     </div>
   </footer>
