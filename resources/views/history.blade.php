@@ -60,8 +60,7 @@
                             <td>{{$apply->req_start}}</td>
                             <td>{{$apply->req_end}}</td>
                             <td>{{$apply->req_reason}}</td>
-                            <td>{{($apply->status)?'yes':'not'}}</td>
-
+                            <td>{{($apply->status)?'審核成功':'審核不通過'}}</td>
                         </tr>
                     @endforeach
                 </table>
