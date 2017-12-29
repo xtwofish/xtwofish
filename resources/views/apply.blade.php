@@ -79,7 +79,7 @@
                         {{--班級--}}
                         <div class="col-xs-24 col-sm-12 col-md-12">
                             <div class="form-group">
-                                <input name="user_class" class="form-control" placeholder="請輸入班級">
+                                <input name="user_class" class="form-control" placeholder="請輸入班級" value="{{ Auth::user()->user_class }}">
                                 {{--data-rule="minlen:4" data-msg="Please enter at least 4 chars" />--}}
                                 {{--<div class="validation"></div>--}}
                             </div>
@@ -91,7 +91,7 @@
                             </div>
                             {{--手機--}}
                             <div class="form-group">
-                                <input name="user_phone" class="form-control" placeholder="請輸入電話">
+                                <input name="user_phone" class="form-control" placeholder="請輸入電話" value="{{ Auth::user()->user_phone }}">
                                 {{--data-rule="minlen:10" data-msg="Please enter at least 10 chars" />--}}
                                 {{--<div class="validation"></div>--}}
                             </div>
