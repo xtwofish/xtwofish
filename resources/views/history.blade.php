@@ -4,6 +4,12 @@
 
 @section('content')
     <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">管理後臺</a>
+        </li>
+        <li class="breadcrumb-item active">歷史紀錄</li>
+    </ol>
     <!-- Example DataTables Card-->
     <div class="card mb-3">
         <div class="card-header">
@@ -15,29 +21,29 @@
                     <thead>
                     <tr>
                         <th width="30" style="text-align: center">id</th>
-                        <th>class_id</th>
-                        <th>user_class</th>
-                        <th>user_name</th>
-                        <th>user_phone</th>
-                        <th>req_date</th>
-                        <th>req_start</th>
-                        <th>req_end</th>
-                        <th>req_reason</th>
-                        <th>status</th>
+                        <th>申請教室</th>
+                        <th>班級</th>
+                        <th>姓名</th>
+                        <th>電話</th>
+                        <th>日期</th>
+                        <th>開始時間</th>
+                        <th>結束時間</th>
+                        <th>申請事由</th>
+                        <th>狀態</th>
                     </tr>
                     </thead>
                     <tfoot>
                     <tr>
                         <th width="30" style="text-align: center">id</th>
-                        <th>class_id</th>
-                        <th>user_class</th>
-                        <th>user_name</th>
-                        <th>user_phone</th>
-                        <th>req_date</th>
-                        <th>req_start</th>
-                        <th>req_end</th>
-                        <th>req_reason</th>
-                        <th>status</th>
+                        <th>申請教室</th>
+                        <th>班級</th>
+                        <th>姓名</th>
+                        <th>電話</th>
+                        <th>日期</th>
+                        <th>開始時間</th>
+                        <th>結束時間</th>
+                        <th>申請事由</th>
+                        <th>狀態</th>
                     </tr>
                     </tfoot>
                     <tbody>
