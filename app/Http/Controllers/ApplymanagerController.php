@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Apply;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ApplymanagerController extends Controller
 {
@@ -14,8 +15,8 @@ class ApplymanagerController extends Controller
 
     public function index()
     {
-        $applys=Apply::all();
-//        $applys=Apply::where('user_name', '咪咪')->get();
+
+        $applys=Apply::where('user_name',  Auth::user()->name )->get();
 //        $data=['applys'=>$applys];
         return view('applymanager',compact('applys'));
     }
