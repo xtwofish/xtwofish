@@ -27,6 +27,7 @@ Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerCon
 Route::get('/apply',['as'=>'apply.index','uses'=> 'ApplyController@apply']);
 
 Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
+Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
 
 Route::get('/cards',['as'=>'cards.index','uses'=> 'CardsController@cards']);
 
