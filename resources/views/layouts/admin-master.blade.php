@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin - Start Bootstrap Template</title>
+    <title>管理後臺-Classroom Application</title>
     <!-- Bootstrap core CSS-->
     <link href=" {{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Custom fonts for this template-->
@@ -30,34 +30,44 @@
             {{--審核申請--}}
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ route('admin.index') }}">
-                    <span class="nav-link-text">審核申請</span>
+                    <span class="nav-link-text">
+                        <i class="fa fa-fw fa-bell-o"></i> 審核申請
+                    </span>
                 </a>
             </li>
             {{--教室狀態--}}
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ route('cards.index') }}">
-                    <span class="nav-link-text">教室狀態</span>
+                    <span class="nav-link-text">
+                        <i class="fa fa-fw fa-check-circle-o"></i> 教室狀態
+                    </span>
                 </a>
             </li>
             {{--歷史紀錄--}}
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ route('history.index') }}">
-                    <span class="nav-link-text">歷史紀錄</span>
+                    <span class="nav-link-text"
+                    ><i class="fa fa-fw fa-clock-o"></i> 歷史紀錄
+                    </span>
                 </a>
             </li>
 
         </ul>
-        <ul class="navbar-nav sidenav-toggler">
-            <li class="nav-item">
-                <a class="nav-link text-center" id="sidenavToggler">
-                    <i class="fa fa-fw fa-angle-left"></i>
-                </a>
-            </li>
-        </ul>
         <ul class="navbar-nav ml-auto">
+            {{--<li class="nav-item">--}}
+                {{--<a class="nav-link" data-toggle="modal" data-target="#exampleModal">--}}
+                    {{--<i class="fa fa-fw fa-sign-out"></i>登出</a>--}}
+            {{--</li>--}}
             <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                    <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                <a href="{{ route('logout') }}" class="nav-link"
+                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                    <i class="fa fa-fw fa-sign-out"></i>登出
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
             </li>
         </ul>
     </div>
@@ -66,5 +76,6 @@
     <div class="container-fluid">
 
         @yield('content')
+        @include('layouts.partials.admin-footer')
     </div>
 </div>
