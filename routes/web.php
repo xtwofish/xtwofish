@@ -53,35 +53,42 @@ Route::delete('applymanager/{id}',['as'=>'applymanager.destroy','uses'=>'Applyma
 
 //501
 Route::get('/one',['as'=>'one.index','uses'=> 'OneController@one']);
-
 Route::get('/one' , ['as' => 'one.index' , 'uses' => 'OneController@index']);
-
-Route::delete('one/{id}',['as'=>'one.destroy','uses'=>'OneController@destroy']);
+//admin
+Route::get('/admin.one',['as'=>'admin.one.index','uses'=> 'OneController@admin.one']);
+Route::get('/admin.one' , ['as' => 'admin.one.index' , 'uses' => 'OneController@show']);
 
 //502
 Route::get('/two',['as'=>'two.index','uses'=> 'TwoController@two']);
-
 Route::get('/two' , ['as' => 'two.index' , 'uses' => 'TwoController@index']);
+//admin
+Route::get('/admin.two',['as'=>'admin.two.index','uses'=> 'TwoController@admin.two']);
+Route::get('/admin.two' , ['as' => 'admin.two.index' , 'uses' => 'TwoController@show']);
 
-Route::delete('two/{id}',['as'=>'two.destroy','uses'=>'TwoController@destroy']);
+
 
 //503
 Route::get('/three',['as'=>'three.index','uses'=> 'ThreeController@one']);
-
 Route::get('/three' , ['as' => 'three.index' , 'uses' => 'ThreeController@index']);
+//admin
+Route::get('/admin.three',['as'=>'admin.three.index','uses'=> 'ThreeController@admin.three']);
+Route::get('/admin.three' , ['as' => 'admin.three.index' , 'uses' => 'ThreeController@show']);
 
-Route::delete('three/{id}',['as'=>'three.destroy','uses'=>'ThreeController@destroy']);
+
 
 //504
 Route::get('/four',['as'=>'four.index','uses'=> 'FourController@four']);
-
 Route::get('/four' , ['as' => 'four.index' , 'uses' => 'FourController@index']);
+//admin
+Route::get('/admin.four',['as'=>'admin.four.index','uses'=> 'FourController@admin.four']);
+Route::get('/admin.four' , ['as' => 'admin.four.index' , 'uses' => 'FourController@show']);
 
-Route::delete('four/{id}',['as'=>'four.destroy','uses'=>'FourController@destroy']);
+
 
 //509
 Route::get('/nine',['as'=>'nine.index','uses'=> 'NineController@nine']);
-
 Route::get('/nine' , ['as' => 'nine.index' , 'uses' => 'NineController@index']);
+//admin
+Route::get('/admin.nine',['as'=>'admin.nine.index','uses'=> 'NineController@admin.nine']);
+Route::get('/admin.nine' , ['as' => 'admin.nine.index' , 'uses' => 'NineController@show']);
 
-Route::delete('nine/{id}',['as'=>'nine.destroy','uses'=>'NineController@destroy']);

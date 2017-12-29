@@ -19,11 +19,20 @@ class TwoController extends Controller
         return view('two',compact('applys'));
     }
 
-    public function destroy($id)
+    //admin
+    public function page()
     {
-        Apply::destroy($id);
-        return redirect()->route('two.index');
+        return view('admin.two');
     }
 
+    public function show()
+    {
+//        $applys=Apply::all();
+        $applys=Apply::where('class_id', 'M502')->get();
+//        $data=['applys'=>$applys];
+        return view('admin.two',compact('applys'));
+    }
 
 }
+
+

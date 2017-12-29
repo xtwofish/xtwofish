@@ -19,11 +19,17 @@ class FourController extends Controller
         return view('four',compact('applys'));
     }
 
-    public function destroy($id)
+    public function page()
     {
-        Apply::destroy($id);
-        return redirect()->route('four.index');
+        return view('admin.four');
     }
 
+    public function show()
+    {
+//        $applys=Apply::all();
+        $applys=Apply::where('class_id', 'M504')->get();
+//        $data=['applys'=>$applys];
+        return view('admin.four',compact('applys'));
+    }
 
 }

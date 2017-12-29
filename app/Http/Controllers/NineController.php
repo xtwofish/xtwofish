@@ -19,10 +19,18 @@ class NineController extends Controller
         return view('nine',compact('applys'));
     }
 
-    public function destroy($id)
+
+    public function page()
     {
-        Apply::destroy($id);
-        return redirect()->route('nine.index');
+        return view('admin.nine');
+    }
+
+    public function show()
+    {
+//        $applys=Apply::all();
+        $applys=Apply::where('class_id', 'M509')->get();
+//        $data=['applys'=>$applys];
+        return view('admin.nine',compact('applys'));
     }
 
 

@@ -19,11 +19,18 @@ class ThreeController extends Controller
         return view('three',compact('applys'));
     }
 
-    public function destroy($id)
+
+    public function page()
     {
-        Apply::destroy($id);
-        return redirect()->route('three.index');
+        return view('admin.three');
     }
 
+    public function show()
+    {
+//        $applys=Apply::all();
+        $applys=Apply::where('class_id', 'M503')->get();
+//        $data=['applys'=>$applys];
+        return view('admin.three',compact('applys'));
+    }
 
 }

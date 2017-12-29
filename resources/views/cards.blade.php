@@ -16,8 +16,8 @@
               </div>
               <div class="mr-5">501</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+              <span class="float-left">教室借用狀況</span>
               <span class="float-right">
               </span>
             </a>
@@ -31,8 +31,8 @@
               </div>
               <div class="mr-5">502</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.two.index') }}'>
+                <span class="float-left">教室借用狀況</span>
               <span class="float-right">
               </span>
             </a>
@@ -46,8 +46,8 @@
               </div>
               <div class="mr-5">503</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.three.index') }}'>
+                <span class="float-left">教室借用狀況</span>
               <span class="float-right">
               </span>
             </a>
@@ -62,8 +62,8 @@
               </div>
               <div class="mr-5">504</div>
             </div>
-            <a class="card-footer text-white clearfix small z-1" href="#">
-              <span class="float-left">View Details</span>
+            <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.four.index') }}'>
+                <span class="float-left">教室借用狀況</span>
               <span class="float-right">
               </span>
             </a>
@@ -78,8 +78,8 @@
                       </div>
                       <div class="mr-5">509</div>
                   </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
+                  <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.nine.index') }}'>
+                      <span class="float-left">教室借用狀況</span>
                       <span class="float-right">
               </span>
                   </a>
@@ -94,8 +94,8 @@
                       </div>
                       <div class="mr-5">510</div>
                   </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
+                  <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                      <span class="float-left">教室借用狀況</span>
                       <span class="float-right">
               </span>
                   </a>
@@ -110,8 +110,8 @@
                       </div>
                       <div class="mr-5">511</div>
                   </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
+                  <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                      <span class="float-left">教室借用狀況</span>
                       <span class="float-right">
               </span>
                   </a>
@@ -126,8 +126,8 @@
                       </div>
                       <div class="mr-5">513</div>
                   </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
+                  <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                      <span class="float-left">教室借用狀況</span>
                       <span class="float-right">
               </span>
                   </a>
@@ -142,8 +142,8 @@
                       </div>
                       <div class="mr-5">514</div>
                   </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
+                  <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                      <span class="float-left">教室借用狀況</span>
                       <span class="float-right">
               </span>
                   </a>
@@ -158,8 +158,8 @@
                       </div>
                       <div class="mr-5">516</div>
                   </div>
-                  <a class="card-footer text-white clearfix small z-1" href="#">
-                      <span class="float-left">View Details</span>
+                  <a class="card-footer text-white clearfix small z-1" href='{{ route('admin.one.index') }}'>
+                      <span class="float-left">教室借用狀況</span>
                       <span class="float-right">
               </span>
                   </a>

@@ -20,11 +20,20 @@ class OneController extends Controller
         return view('one',compact('applys'));
     }
 
-    public function destroy($id)
+
+
+    //admin
+    public function page()
     {
-        Apply::destroy($id);
-        return redirect()->route('one.index');
+        return view('admin.one');
     }
 
+    public function show()
+    {
+//        $applys=Apply::all();
+        $applys=Apply::where('class_id', 'M501')->get();
+//        $data=['applys'=>$applys];
+        return view('admin.one',compact('applys'));
+    }
 
 }
