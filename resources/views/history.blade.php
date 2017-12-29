@@ -11,43 +11,53 @@
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+
                     <thead>
                     <tr>
-                        <th>日期</th>
-                        <th>教室</th>
-                        <th>開始時間</th>
-                        <th>結束時間</th>
-                        <th>班級</th>
-                        <th>姓名</th>
-                        <th>申請事由</th>
-                        <th>狀態</th>
+                        <th width="30" style="text-align: center">id</th>
+                        <th>class_id</th>
+                        <th>user_class</th>
+                        <th>user_name</th>
+                        <th>user_phone</th>
+                        <th>req_date</th>
+                        <th>req_start</th>
+                        <th>req_end</th>
+                        <th>req_reason</th>
+                        <th>status</th>
                     </tr>
                     </thead>
-                    {{--<tfoot>--}}
-                    {{--<tr>--}}
-                        {{--<th>日期</th>--}}
-                        {{--<th>教室</th>--}}
-                        {{--<th>開始時間</th>--}}
-                        {{--<th>結束時間</th>--}}
-                        {{--<th>班級</th>--}}
-                        {{--<th>姓名</th>--}}
-                        {{--<th>申請事由</th>--}}
-                        {{--<th>狀態</th>--}}
-                    {{--</tr>--}}
-                    {{--</tfoot>--}}
-                    <tbody>
+                    <tfoot>
                     <tr>
-                        <td>2017-05-06</td>
-                        <td>M501</td>
-                        <td>上午8:00</td>
-                        <td>下午5:00</td>
-                        <td>四資二乙</td>
-                        <td>丁小胖</td>
-                        <td>我就是想要借阿，你管我，我還不要還呢 ! </td>
-                        <td>借用中</td>
+                        <th width="30" style="text-align: center">id</th>
+                        <th>class_id</th>
+                        <th>user_class</th>
+                        <th>user_name</th>
+                        <th>user_phone</th>
+                        <th>req_date</th>
+                        <th>req_start</th>
+                        <th>req_end</th>
+                        <th>req_reason</th>
+                        <th>status</th>
                     </tr>
+                    </tfoot>
+                    <tbody>
 
-                    </tbody>
+                    {{--將對應的資料傳到對應的欄位--}}
+                    @foreach($applys as $apply)
+                        <tr>
+                            <td>{{$apply->id}}</td>
+                            <td>{{$apply->class_id}}</td>
+                            <td>{{$apply->user_class}}</td>
+                            <td>{{$apply->user_name}}</td>
+                            <td>{{$apply->user_phone}}</td>
+                            <td>{{$apply->req_date}}</td>
+                            <td>{{$apply->req_start}}</td>
+                            <td>{{$apply->req_end}}</td>
+                            <td>{{$apply->req_reason}}</td>
+                            <td>{{($apply->status)?'yes':'not'}}</td>
+
+                        </tr>
+                    @endforeach
                 </table>
             </div>
         </div>
@@ -59,7 +69,7 @@
     <footer class="sticky-footer">
         <div class="container">
             <div class="text-center">
-                <small>Copyright © Your Website 2017</small>
+                <small>Copyright c Your Website 2017</small>
             </div>
         </div>
     </footer>
@@ -97,8 +107,5 @@
     <script src="js/sb-admin.min.js"></script>
     <!-- Custom scripts for this page-->
     <script src="js/sb-admin-datatables.min.js"></script>
-    </div>
-    </body>
 
-    </html>
 @endsection
