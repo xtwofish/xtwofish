@@ -8,30 +8,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h4 class="heading">Recent Works</h4>
+                    <h4 class="heading">資訊管理系</h4>
 
                     <div id="filters-container" class="cbp-l-filters-button">
                         <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
                             <div class="cbp-filter-counter"></div>
                         </div>
-                        <div data-filter=".identity" class="cbp-filter-item">Identity
+                        <div data-filter=".general" class="cbp-filter-item">一般教室
                             <div class="cbp-filter-counter"></div>
                         </div>
-                        <div data-filter=".web-design" class="cbp-filter-item">Web Design
+                        <div data-filter=".computer" class="cbp-filter-item">電腦教室
                             <div class="cbp-filter-counter"></div>
                         </div>
-                        <div data-filter=".graphic" class="cbp-filter-item">Graphic
+                        <div data-filter=".topic" class="cbp-filter-item">專題教室
                             <div class="cbp-filter-counter"></div>
                         </div>
-                        <div data-filter=".logo" class="cbp-filter-item">Logo
-                            <div class="cbp-filter-counter"></div>
-                        </div>
+
                     </div>
 
                     {{--501--}}
                     <div id="grid-container" class="cbp-l-grid-projects">
                         <ul>
-                            <li class="cbp-item graphic">
+                            <li class="cbp-item graphic general">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/501.jpg" alt="" />
@@ -48,7 +46,7 @@
 
                             </li>
                             {{--502--}}
-                            <li class="cbp-item web-design logo">
+                            <li class="cbp-item web-design general">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/502.jpg" alt="" />
@@ -65,7 +63,7 @@
 
                             </li>
                             {{--503--}}
-                            <li class="cbp-item graphic logo">
+                            <li class="cbp-item graphic general">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/503.jpg" alt="" />
@@ -83,7 +81,7 @@
 
                             </li>
                             {{--504--}}
-                            <li class="cbp-item web-design graphic">
+                            <li class="cbp-item web-design general">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/504.jpg" alt="" />
@@ -101,7 +99,7 @@
 
                             </li>
                             {{--509--}}
-                            <li class="cbp-item identity web-design">
+                            <li class="cbp-item identity topic">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/509.jpg" alt="" />
@@ -119,7 +117,7 @@
 
                             </li>
                             {{--510--}}
-                            <li class="cbp-item identity web-design">
+                            <li class="cbp-item identity topic">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/510.jpg" alt="" />
@@ -137,7 +135,7 @@
 
                             </li>
                             {{--511--}}
-                            <li class="cbp-item graphic logo">
+                            <li class="cbp-item graphic computer">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/511.jpg" alt="" />
@@ -155,7 +153,7 @@
 
                             </li>
                             {{--513--}}
-                            <li class="cbp-item graphic logo">
+                            <li class="cbp-item graphic computer">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/513.jpg" alt="" />
@@ -173,7 +171,7 @@
 
                             </li>
                             {{--514--}}
-                            <li class="cbp-item identity web-design">
+                            <li class="cbp-item identity computer">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/514.jpg" alt="" />
@@ -191,7 +189,7 @@
 
                             </li>
                             {{--516--}}
-                            <li class="cbp-item identity web-design">
+                            <li class="cbp-item identity topic">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
                                         <img src="img/works/516.jpg" alt="" />
