@@ -6,7 +6,7 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
           <li class="breadcrumb-item">
-              <a href="#">管理後臺</a>
+              <a href="{{ route('admin.index') }}">管理後臺</a>
           </li>
           <li class="breadcrumb-item active">教室狀態</li>
       </ol>

@@ -37,6 +37,7 @@
 
 
 
+
 <div id="wrapper">
     <!-- start header -->
     <header>
@@ -108,8 +109,7 @@
                             <td>{{$apply->req_date}}</td>
                             <td>{{$apply->req_start}}</td>
                             <td>{{$apply->req_end}}</td>
-                                </form>
-                            </td>
+
                         </tr>
                     @endforeach
                     </tbody>
