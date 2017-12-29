@@ -72,7 +72,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">登出</a></li>
+                            <li><a href="{{ route('login') }}">登入</a></li>
                             <li><a href="{{ route('register') }}">註冊</a></li>
                         @else
 
