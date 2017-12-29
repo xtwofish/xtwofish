@@ -27,4 +27,10 @@ class AdminController extends Controller
         return view('admin',compact('applys'));
 
     }
+
+    public function destroy($id)
+    {
+        Apply::destroy($id);
+        return redirect()->route('admin.index');
+    }
 }

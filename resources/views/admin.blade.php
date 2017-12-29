@@ -29,7 +29,7 @@
             <th>req_end</th>
             <th>req_reason</th>
             <th>status</th>
-            <th>功能</th>
+            <th>審核</th>
           </tr>
           </thead>
           <tfoot>
@@ -44,7 +44,7 @@
             <th>req_end</th>
             <th>req_reason</th>
             <th>status</th>
-            <th>功能</th>
+            <th>審核</th>
           </tr>
           </tfoot>
           <tbody>
@@ -63,7 +63,13 @@
               <td>{{$apply->req_reason}}</td>
               <td>{{($apply->status)?'審核成功':'尚未審核'}}</td>
               <td>
-                <a href ="{{route('admin.status', ['id'=>$apply->id])}}"class="btn btn-xs btn-white" role="button">check</a>
+
+                <form action="{{ route('admin.destroy', $apply->id) }}" method="POST">
+                    <a href ="{{route('admin.status', ['id'=>$apply->id])}}"class="btn btn-success " role="button">同意</a>
+                  {{ csrf_field() }}
+                  {{ method_field('DELETE') }}
+                  <button class="btn btn-danger ">拒絕</button>
+                </form>
               </td>
             </tr>
           @endforeach

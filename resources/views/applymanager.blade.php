@@ -40,24 +40,24 @@
 <div id="wrapper">
 	<!-- start header -->
 	<header>
-		<div class="top">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
+		{{--<div class="top">--}}
+			{{--<div class="container">--}}
+				{{--<div class="row">--}}
+					{{--<div class="col-md-6">--}}
 
-					</div>
-					<div class="col-md-6">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search" title="Click to start searching"></span>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+					{{--</div>--}}
+					{{--<div class="col-md-6">--}}
+						{{--<div id="sb-search" class="sb-search">--}}
+							{{--<form>--}}
+								{{--<input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">--}}
+								{{--<input class="sb-search-submit" type="submit" value="">--}}
+								{{--<span class="sb-icon-search" title="Click to start searching"></span>--}}
+							{{--</form>--}}
+						{{--</div>--}}
+					{{--</div>--}}
+				{{--</div>--}}
+			{{--</div>--}}
+		{{--</div>--}}
 
 		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
@@ -101,7 +101,8 @@
 						<th>開始時間</th>
 						<th>結束時間</th>
 						<th>申請事由</th>
-						<th width="100" style="text-align: center">功能</th>
+						<th>審核狀態</th>
+						<th width="100" style="text-align: center">取消申請</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -116,13 +117,14 @@
 							<td>{{$apply->req_start}}</td>
 							<td>{{$apply->req_end}}</td>
 							<td>{{$apply->req_reason}}</td>
+							<td>{{($apply->status)?'審核成功':'尚未審核'}}</td>
 							<td>
 								{{--<a href="{{route('applymanager.index',$apply->id)}}">編輯</a>--}}
 								{{--/--}}
 								<form action="{{ route('applymanager.destroy', $apply->id) }}" method="POST">
 									{{ csrf_field() }}
 									{{ method_field('DELETE') }}
-									<button class="btn btn-success btn-link">取消申請</button>
+									<button class="btn btn-danger ">取消申請</button>
 								</form>
 							</td>
 						</tr>
@@ -169,6 +171,7 @@
 	<script src="js/sb-admin.min.js"></script>
 	<!-- Custom scripts for this page-->
 	<script src="js/sb-admin-datatables.min.js"></script>
+
 </div>
 </body>
 
