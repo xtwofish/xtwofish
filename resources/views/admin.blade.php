@@ -28,6 +28,7 @@
             <th>req_start</th>
             <th>req_end</th>
             <th>req_reason</th>
+            <th>status</th>
             <th>功能</th>
           </tr>
           </thead>
@@ -42,6 +43,7 @@
             <th>req_start</th>
             <th>req_end</th>
             <th>req_reason</th>
+            <th>status</th>
             <th>功能</th>
           </tr>
           </tfoot>
@@ -59,7 +61,7 @@
               <td>{{$apply->req_start}}</td>
               <td>{{$apply->req_end}}</td>
               <td>{{$apply->req_reason}}</td>
-              {{--<td>{{($apply->status)?'yes':'not'}}</td>--}}
+              <td>{{($apply->status)?'yes':'not'}}</td>
               <td>
                 {{--<form action="{{ route('admin.posts.destroy', $post->id) }}" method="POST">--}}
                 {{--{{ csrf_field() }}--}}
