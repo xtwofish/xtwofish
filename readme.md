@@ -7,45 +7,39 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## About Laravel
+## 關於 教室申請系統-ClassroomApplication
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+使用者可以透過申請表單預先上網登記想要借用的教室，並且可以瀏覽每間教室的借用情形及管理自己的教室申請。
+而管理者可以審核使用者的申請，並且記錄各教室借用的歷史紀錄。
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 如何復原 教室申請系統-ClassroomApplication
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+1.開啟Cmder.exe<p>
+2.cd ClassApplication<p>
+3.composer install –no-scripts <p>
+4.composer run‐script post‐root‐package‐install <p>
+5.composer run‐script post‐install‐cmd <p>
+6.composer run‐script post‐create‐project‐cmd <p>
 
-## Learning Laravel
+## 使用者
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+1.Clone下來後，.env檔內的<p>
+   DB_DATABASE=ClassApplication<p>
+   DB_USERNAME=root<p>
+   DB_PASSWORD=root<p>
+2.確認資料庫已經有正常運作<p>
+3.如果有會員可以直接登入，若無，則要透過註冊按鈕進行註冊<p>
+4.進入系統後，可以瀏覽教室借用情形，如果想要預借教室則可點選「申請」進行租借。<p>
+5.申請後，點選「申請管理」，可以瀏覽教室申請審核狀況且可以自行點選取消即刪除該申請。<p>
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+## 管理者
 
-## Laravel Sponsors
+1.點選「審核申請」即可看到使用者的教室申請，並且審核通過或審核不通過。<p>
+2.點選「教室狀態」即可看到每間教室曾經被哪位使用者所借用及審核狀態。<p>
+3.點選「歷史紀錄」即可看到哪間教室曾經被哪位使用者所借用及審核狀態。<p>
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+## 組員
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+[四資三乙 3A432058 陳欣妤](https://github.com/s3A432058)<p>
+[四資三乙 3A432090 陳美妤](https://github.com/s3A432090)<p>
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
