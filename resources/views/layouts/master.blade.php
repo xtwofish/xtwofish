@@ -102,9 +102,8 @@
                              {{--顯示使用者--}}
                              <li class="dropdown">
                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                     您好！{{ Auth::guard('admin')->user()->name}}管理者
+                                     您好！<strong>{{ Auth::guard('admin')->user()->name}}</strong>管理者
                                  </a>
-
                                  <ul class="dropdown-menu" role="menu">
                                      <li><a href="{{ route('admin.index') }}">進入後台</a></li>
                                      <li>
