@@ -30,7 +30,12 @@ Route::group(['middleware'=>'auth'], function() {
     Route::get('/applymanager' , ['as' => 'applymanager.index' , 'uses' => 'ApplymanagerController@index']);
 });
 
-Route::get('/admin','AdminController@index')->name('admin');
+Route::prefix('admin')->group(function () {
+    Route::get('/', 'AdminController@index')->name('admin.dashboard');
+    Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
+    Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
+});
+
 Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
 Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
 //Route::post('/applys', 'AdminController@update');
