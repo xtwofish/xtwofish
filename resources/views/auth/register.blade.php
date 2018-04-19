@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
-@section('content2')
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-warning">
-                <div class="panel-heading">註冊</div>
+                <div class="panel-heading" style="text-align:center;color: white;" ><h2>註 冊<br><small>Register</small></h2></div>
                 <hr class="colorgraph">
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -95,13 +95,11 @@
                             </div>
                         </div>
 
-
-
                         <hr class="colorgraph">
-                        {{--<div class="form-group">--}}
+                        <div class="form-group">
                             <div class="col-md-12 col-md-offset-5">
-                                <button type="submit" class="btn btn-primary">
-                                    註冊
+                                <button type="submit" class="btn btn-group-vertical" style="background-color:pink;font-weight:bold;color:black;width:auto;">
+                                    註 冊
                                 </button>
                             </div>
                         </div>

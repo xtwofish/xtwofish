@@ -1,19 +1,19 @@
 
 <!DOCTYPE html>
-{{--<html lang="{{ app()->getLocale() }}">--}}
-{{--<head>--}}
-    {{--<meta charset="utf-8">--}}
-    {{--<meta http-equiv="X-UA-Compatible" content="IE=edge">--}}
-    {{--<meta name="viewport" content="width=device-width, initial-scale=1">--}}
+<html lang="{{ app()->getLocale() }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{--<!-- CSRF Token -->--}}
-    {{--<meta name="csrf-token" content="{{ csrf_token() }}">--}}
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    {{--<title>{{ config('app.name', 'Laravel') }}</title>--}}
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
-    {{--<!-- Styles -->--}}
-    {{--<link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
-{{--</head>--}}
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+</head>
 <head>
     <meta charset="utf-8">
     <title>Classroom Application-TwoFishWorld</title>
@@ -82,7 +82,7 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                {{--<ul class="dropdown-menu" role="menu">--}}
+                                <ul class="dropdown-menu" role="menu">
                                     <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -94,14 +94,14 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
-                                {{--</ul>--}}
+                                </ul>
                             </li>
                         @endif
                     </ul>
                 </div>
             </div>
         </nav>
-        @yield('content2')
+        @yield('content')
     </div>
 
     <!-- Scripts -->
