@@ -46,13 +46,14 @@ Route::delete('admin/{id}',['as'=>'admin.destroy','uses'=>'AdminController@destr
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
 Route::get('/history', ['as' => 'history.index', 'uses' => 'HistoryController@Show']);
 
-Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
+
 Route::delete('applymanager/{id}',['as'=>'applymanager.destroy','uses'=>'ApplymanagerController@destroy']);
 
 
 
 //no group
 Route::get('/completed',['as' => 'admin.status', 'uses' => 'AdminController@completed']);
+Route::get('/refuse',['as' => 'admin.refuse', 'uses' => 'AdminController@refuse']);
 
 Route::get('/cards',['as'=>'cards.index','uses'=> 'CardsController@cards']);
 

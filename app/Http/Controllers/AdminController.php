@@ -31,7 +31,6 @@ class AdminController extends Controller
 //        return view('admin');
 //    }
     public function Show(){
-//        $applys=Apply::all();
         $applys=Apply::where('status', '0')->get();
         return view('admin',compact('applys'));
     }
@@ -42,11 +41,18 @@ class AdminController extends Controller
         $fix->status=true;
         $fix->save();
         $applys = Apply::all()->where('id',$request->id);
-//        return view('admin',compact('applys'));
         return redirect()->route('admin.index');
 
     }
+    public function refuse(Request $request)
+    {
+        $fix = Apply::find($request->id);
+        $fix->status=2;
+        $fix->save();
+        $applys = Apply::all()->where('id',$request->id);
+        return redirect()->route('admin.index');
 
+    }
     public function destroy($id)
     {
         Apply::destroy($id);
