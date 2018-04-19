@@ -34,6 +34,7 @@
             <th>結束時間</th>
             <th>申請事由</th>
             <th>狀態</th>
+            <th>審核</th>
           </tr>
           </thead>
           <tfoot>
@@ -48,6 +49,7 @@
             <th>結束時間</th>
             <th>申請事由</th>
             <th>狀態</th>
+            <th>審核</th>
           </tr>
           </tfoot>
           <tbody>
@@ -66,12 +68,6 @@
               <td>{{$apply->req_reason}}</td>
               <td>{{($apply->status)?'審核成功':'尚未審核'}}</td>
               <td>
-
-                <form action="{{ route('admin.status', $apply->id) }}" method="POST">
-                  <a href ="{{route('admin.status', ['id'=>$apply->id])}}" class="btn btn-success " type="submit" role="button">同意</a>
-                  {{ csrf_field() }}
-
-
 
                 <form action="{{ route('admin.destroy', $apply->id) }}" method="POST">
                     <a href ="{{route('admin.status', ['id'=>$apply->id])}}"class="btn btn-success " role="button">同意</a>
