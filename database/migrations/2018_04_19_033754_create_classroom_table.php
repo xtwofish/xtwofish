@@ -19,7 +19,7 @@ class CreateClassroomTable extends Migration
             $table->string('type');
             $table->string('typename');
             $table->string('photo');
-            $table->boolean('status')->default(0);
+            $table->string('status')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });

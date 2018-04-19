@@ -66,9 +66,19 @@
               <td>{{$apply->req_reason}}</td>
               <td>{{($apply->status)?'審核成功':'尚未審核'}}</td>
               <td>
+
                 <form action="{{ route('admin.status', $apply->id) }}" method="POST">
                   <a href ="{{route('admin.status', ['id'=>$apply->id])}}" class="btn btn-success " type="submit" role="button">同意</a>
                   {{ csrf_field() }}
+
+
+
+                <form action="{{ route('admin.destroy', $apply->id) }}" method="POST">
+                    <a href ="{{route('admin.status', ['id'=>$apply->id])}}"class="btn btn-success " role="button">同意</a>
+                  <a href ="{{route('admin.refuse', ['id'=>$apply->id])}}"class="btn btn-danger " role="button">拒絕</a>
+                  {{--{{ csrf_field() }}--}}
+                  {{--{{ method_field('DELETE') }}--}}
+                  {{--<button class="btn btn-danger ">拒絕</button>--}}
 
                 </form>
 

@@ -18,7 +18,7 @@
     <link id="t-colors" href="skins/default.css" rel="stylesheet" />
 
     <!-- boxed bg -->
-    <link id="bodybg" href="bodybg/bg1.css" rel="stylesheet" type="text/css" />
+    <link id="bodybg" href="bodybg/.css" rel="stylesheet" type="text/css" />
 
     <!-- =======================================================
     Theme Name: Sailor

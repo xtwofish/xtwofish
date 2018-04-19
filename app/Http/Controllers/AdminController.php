@@ -35,25 +35,24 @@ class AdminController extends Controller
         $applys=Apply::where('status', '0')->get();
         return view('admin',compact('applys'));
     }
-    public function update($id)
+    public function completed(Request $request)
     {
-        $fix = Apply::find($id);
-        switch ($fix['status']){
-            case '0':
-                    $fix->status=true;
-                    $fix->save();
-                    return back()->with('success','您已同意申請 !');
-                break;
-            default:
-                $fix->status=false;
-                $fix->save();
-                return back()->with('error','您已拒絕申請 !');
-                break;
-        }
-        $applys = Apply::all()->where('id',$id);
-        return view('admin.admin',compact('applys'));
-    }
+        $fix = Apply::find($request->id);
+        $fix->status=true;
+        $fix->save();
+        $applys = Apply::all()->where('id',$request->id);
+        return redirect()->route('admin.index');
 
+    }
+    public function refuse(Request $request)
+    {
+        $fix = Apply::find($request->id);
+        $fix->status=2;
+        $fix->save();
+        $applys = Apply::all()->where('id',$request->id);
+        return redirect()->route('admin.index');
+
+    }
     public function destroy($id)
     {
         Apply::destroy($id);
