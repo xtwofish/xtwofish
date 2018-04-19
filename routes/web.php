@@ -30,7 +30,7 @@ Route::group(['middleware'=>'auth'], function() {
     Route::get('/applymanager' , ['as' => 'applymanager.index' , 'uses' => 'ApplymanagerController@index']);
 });
 
-
+Route::get('/admin','AdminController@index')->name('admin');
 Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
 Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
 //Route::post('/applys', 'AdminController@update');
