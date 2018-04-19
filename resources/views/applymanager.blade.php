@@ -117,15 +117,27 @@
 							<td>{{$apply->req_start}}</td>
 							<td>{{$apply->req_end}}</td>
 							<td>{{$apply->req_reason}}</td>
-							<td>{{($apply->status)?'審核成功':'尚未審核'}}</td>
+							<td>@if($apply->status ==0)
+									尚未審核
+								@elseif(($apply->status==1))
+									審核通過
+								@elseif(($apply->status==2))
+									審核不通過
+								@endif</td>
 							<td>
-								{{--<a href="{{route('applymanager.index',$apply->id)}}">編輯</a>--}}
-								{{--/--}}
+								@if(($apply->status ==0))
 								<form action="{{ route('applymanager.destroy', $apply->id) }}" method="POST">
 									{{ csrf_field() }}
 									{{ method_field('DELETE') }}
 									<button class="btn btn-danger ">取消申請</button>
 								</form>
+								@elseif(($apply->status==1))
+								<p class="text-danger & text-center"><strong>無法取消</strong></p>
+								@elseif(($apply->status==2))
+								<p class="text-danger & text-center"><strong>無法取消</strong></p>
+
+								@endif
+
 							</td>
 						</tr>
 					@endforeach
