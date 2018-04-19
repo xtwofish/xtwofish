@@ -21,6 +21,16 @@ Route::get('/home', function () {
 
 //Route::get('/',['as'=>'app.index','uses'=> 'AppController@app']);
 
+Route::get('/xd',function ()
+{
+    \App\Admin::create([
+            'name' => 'Fish',
+            'email' => 'Fish@gmail.com',
+            'password'=>Hash::make('123456'),
+        ]
+    );
+}
+);
 
 Route::auth();
 Auth::routes();
@@ -41,18 +51,18 @@ Route::prefix('admin')->group(function () {
 //need group
 Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
 Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
-Route::delete('admin/{id}',['as'=>'admin.destroy','uses'=>'AdminController@destroy']);
+Route::delete('/admin/{id}',['as'=>'admin.destroy','uses'=>'AdminController@destroy']);
 
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
 Route::get('/history', ['as' => 'history.index', 'uses' => 'HistoryController@Show']);
 
-Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
 Route::delete('applymanager/{id}',['as'=>'applymanager.destroy','uses'=>'ApplymanagerController@destroy']);
 
 
 
 //no group
-Route::get('/completed',['as' => 'admin.status', 'uses' => 'AdminController@completed']);
+Route::get('/admin/{id}',['as' => 'admin.status', 'uses' => 'AdminController@update']);
+
 
 Route::get('/cards',['as'=>'cards.index','uses'=> 'CardsController@cards']);
 

@@ -16,6 +16,11 @@
       <i class="fa fa-table"></i> 教室申請管理</div>
     <div class="card-body">
       <div class="table-responsive">
+        @if(session('success'))
+          <div class="alert alert-success">{{session('success')}}</div>
+        @elseif(session('error'))
+          <div class="alert alert-danger">{{session('error')}}</div>
+        @endif
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
           <thead>
           <tr>
@@ -29,7 +34,6 @@
             <th>結束時間</th>
             <th>申請事由</th>
             <th>狀態</th>
-            <th>審核</th>
           </tr>
           </thead>
           <tfoot>
@@ -44,7 +48,6 @@
             <th>結束時間</th>
             <th>申請事由</th>
             <th>狀態</th>
-            <th>審核</th>
           </tr>
           </tfoot>
           <tbody>
@@ -63,14 +66,14 @@
               <td>{{$apply->req_reason}}</td>
               <td>{{($apply->status)?'審核成功':'尚未審核'}}</td>
               <td>
-
-                <form action="{{ route('admin.destroy', $apply->id) }}" method="POST">
-                    <a href ="{{route('admin.status', ['id'=>$apply->id])}}"class="btn btn-success " role="button">同意</a>
+                <form action="{{ route('admin.status', $apply->id) }}" method="POST">
+                  <a href ="{{route('admin.status', ['id'=>$apply->id])}}" class="btn btn-success " type="submit" role="button">同意</a>
                   {{ csrf_field() }}
-                  {{ method_field('DELETE') }}
-                  <button class="btn btn-danger ">拒絕</button>
+
                 </form>
+
               </td>
+
             </tr>
           @endforeach
 
