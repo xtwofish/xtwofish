@@ -51,6 +51,14 @@
                     </span>
                 </a>
             </li>
+            {{--回到前台--}}
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="{{ route('house') }}">
+                    <span class="nav-link-text"
+                    ><i class="fa fa-home"></i> 回到前台
+                    </span>
+                </a>
+            </li>
 
         </ul>
         <ul class="navbar-nav ml-auto">
