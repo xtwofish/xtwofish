@@ -20,11 +20,16 @@ Route::get('/home', function () {
 */
 
 
-Route::get('/',['as'=>'app.index','uses'=> 'AppController@app']);
+Route::get('/',['as'=>'house','uses'=> 'HouseController@house']);
 
 Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
 
-Route::get('/apply',['as'=>'apply.index','uses'=> 'ApplyController@apply']);
+
+Route::group(['middleware'=>'auth'], function() {
+    Route::get('/apply',['as'=>'apply.index','uses'=> 'ApplyController@apply']);
+    Route::get('/applymanager' , ['as' => 'applymanager.index' , 'uses' => 'ApplymanagerController@index']);
+});
+
 
 Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
 Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
@@ -47,12 +52,12 @@ Auth::routes();
 Route::auth();
 Auth::routes();
 
-Route::get('/home', 'HouseController@house')->name('house');
+//Route::get('/home', 'HouseController@house')->name('house');
 
 Route::post('/apply',['as' => 'apply.store', 'uses' => 'ApplyController@store']);
 
 
-Route::get('/applymanager' , ['as' => 'applymanager.index' , 'uses' => 'ApplymanagerController@index']);
+
 Route::delete('applymanager/{id}',['as'=>'applymanager.destroy','uses'=>'ApplymanagerController@destroy']);
 
 Route::delete('admin/{id}',['as'=>'admin.destroy','uses'=>'AdminController@destroy']);
