@@ -8,14 +8,9 @@ use Illuminate\Support\Facades\Auth;
 
 class ApplymanagerController extends Controller
 {
-    public function applymanager()
-    {
-        return view('applymanager');
-    }
 
     public function index()
     {
-
         $applys=Apply::where('user_name',  Auth::user()->name )->get();
 //        $data=['applys'=>$applys];
         return view('applymanager',compact('applys'));
