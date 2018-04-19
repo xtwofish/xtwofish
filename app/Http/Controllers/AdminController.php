@@ -5,14 +5,31 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Apply;
 
-
 class AdminController extends Controller
 {
-    public function admin()
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth:admin');
+    }
+
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
     {
         return view('admin');
     }
-
+//    public function admin()
+//    {
+//        return view('admin');
+//    }
     public function Show(){
 //        $applys=Apply::all();
         $applys=Apply::where('status', '0')->get();
