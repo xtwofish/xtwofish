@@ -41,15 +41,15 @@
     <!-- start header -->
     <header>
         <div class="top">
-            <div class="container">
+            <div  class="container">
                 <div class="row">
                     <div class="col-md-6">
 
                     </div>
-                    <div class="col-md-6">
+                    <div  hidden class="col-md-6">
                         <div id="sb-search" class="sb-search">
-                            <form>
-                                <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                            <form  action="{{route('roomsearch')}}" method="get" class="form-inline">
+                                <input class="sb-search-input " placeholder="請輸入關鍵字" type="text" value="" name="search" id="search">
                                 <input class="sb-search-submit" type="submit" value="">
                                 <span class="sb-icon-search" title="Click to start searching"></span>
                             </form>

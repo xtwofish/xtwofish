@@ -20,6 +20,7 @@ Route::get('/home', function () {
 */
 
 
+
 Route::get('/',['as'=>'app.index','uses'=> 'AppController@app']);
 
 Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
@@ -97,4 +98,5 @@ Route::get('/nine' , ['as' => 'nine.index' , 'uses' => 'NineController@index']);
 //admin
 Route::get('/admin.nine',['as'=>'admin.nine.index','uses'=> 'NineController@admin.nine']);
 Route::get('/admin.nine' , ['as' => 'admin.nine.index' , 'uses' => 'NineController@show']);
+
 
