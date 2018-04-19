@@ -16,7 +16,7 @@ class AdminLoginController extends Controller
 
     //function to show admin login form
     public function showLoginForm() {
-        return view('auth.admin-login');
+        return view('admin.admin-login');
     }
     //function to login admins
     public function login(Request $request) {
@@ -28,7 +28,7 @@ class AdminLoginController extends Controller
         //attempt to login the admins in
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password], $request->remember)){
             //if successful redirect to admin dashboard
-            return redirect()->intended(route('admin.dashboard'));
+            return redirect()->intended(route('admin.index'));
         }
         //if unsuccessfull redirect back to the login for with form data
         return redirect()->back()->withInput($request->only('email','remember'));

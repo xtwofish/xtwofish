@@ -24,7 +24,6 @@ Route::get('/',['as'=>'house','uses'=> 'HouseController@house']);
 
 Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
 
-
 Route::group(['middleware'=>'auth'], function() {
     Route::get('/apply',['as'=>'apply.index','uses'=> 'ApplyController@apply']);
     Route::get('/applymanager' , ['as' => 'applymanager.index' , 'uses' => 'ApplymanagerController@index']);
