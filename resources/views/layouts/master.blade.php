@@ -1,4 +1,4 @@
-@include('layouts.app')
+{{--@include('layouts.app')--}}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +48,7 @@
                     </div>
                     <div  hidden class="col-md-6">
                         <div id="sb-search" class="sb-search">
-                            <form  action="{{route('roomsearch')}}" method="get" class="form-inline">
+                            <form   method="get" class="form-inline">
                                 <input class="sb-search-input " placeholder="請輸入關鍵字" type="text" value="" name="search" id="search">
                                 <input class="sb-search-submit" type="submit" value="">
                                 <span class="sb-icon-search" title="Click to start searching"></span>

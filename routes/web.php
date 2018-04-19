@@ -20,12 +20,12 @@ Route::get('/home', function () {
 */
 
 
-<<<<<<< HEAD
+
 
 Route::get('/',['as'=>'app.index','uses'=> 'AppController@app']);
-=======
+
 Route::get('/',['as'=>'house','uses'=> 'HouseController@house']);
->>>>>>> a678dcda02f4620362989a14e78030a1d0857a3e
+
 
 Route::get('/applymanager',['as'=>'applymanager.index','uses'=> 'ApplymanagerController@applymanager']);
 
