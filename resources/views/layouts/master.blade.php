@@ -71,9 +71,61 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li><a href='{{ route('house.index') }}'>首頁</a></li>
-                        <li><a href='{{ route('apply.index') }}'>申請</a></li>
-                        <li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
+                        @if(Auth::guard()->check())
+                            <li><a href='{{ route('house.index') }}'>首頁</a></li>
+                            <li><a href='{{ route('apply.index') }}'>申請教室</a></li>
+                            <li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
+                            {{--顯示使用者--}}
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    您好！{{ Auth::user()->name }}
+                                </a>
+
+                            <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    登出
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            </li>
+                            {{--</ul>--}}
+                            </li>
+                        @elseif(Auth::guard('admin')->check())
+                            <li><a href='{{ route('house.index') }}'>首頁</a></li>
+                            <li><a href='{{ route('apply.index') }}'>申請教室</a></li>
+                            <li><a href='{{ route('applymanager.index') }}'>申請管理</a></li>
+                             {{--顯示使用者--}}
+                             <li class="dropdown">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                     您好！{{ Auth::guard('admin')->user()->name}}管理者
+                                 </a>
+
+                                 <ul class="dropdown-menu" role="menu">
+                                     <li><a href="{{ route('admin.index') }}">進入後台</a></li>
+                                     <li>
+
+                                         <a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                              document.getElementById('logout-form').submit();">
+                                             登出
+                                         </a>
+
+                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                             {{ csrf_field() }}
+                                         </form>
+                                     </li>
+
+                        @else
+                            <li><a href="{{ route('login') }}" >登入</a></li>
+                            <li><a href="{{ route('register') }}">註冊</a></li>
+                            <li><a href="{{ route('admin.index') }}">管理者</a></li>
+                        @endif
+
                     </ul>
                 </div>
             </div>
