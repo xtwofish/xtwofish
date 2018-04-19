@@ -29,184 +29,25 @@
                     {{--501--}}
                     <div id="grid-container" class="cbp-l-grid-projects">
                         <ul>
-                            <li class="cbp-item graphic general">
+                            @foreach($class as $class)
+                            <li class="{{$class->typename}}">
                                 <div class="cbp-caption">
                                     <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/501.jpg" alt="" />
+                                        <img src="img/works/{{$class->photo}}" alt="" />
                                     </div>
                                     <div class="cbp-caption-activeWrap">
                                     <div class="cbp-l-caption-alignCenter">
                                     <div class="cbp-l-caption-body">
-                                    <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
+                                    <a href='{{ route('classtatus.index',$class->name)}}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
                                     </div>
                                     </div>
                                     </div>
                                 </div>
-                                <div class="cbp-l-grid-projects-title">501</div>
-                                <div class="cbp-l-grid-projects-desc">一般教室</div>
+                                <div class="cbp-l-grid-projects-title">{{$class->name}}</div>
+                                <div class="cbp-l-grid-projects-desc">{{$class->type}}</div>
 
                             </li>
-                            {{--502--}}
-                            <li class="cbp-item web-design general">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/502.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-                                                <a href='{{ route('two.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">502</div>
-                                <div class="cbp-l-grid-projects-desc">一般教室</div>
-                            </li>
-                            {{--503--}}
-                            <li class="cbp-item graphic general">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/503.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('three.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">503</div>
-                                <div class="cbp-l-grid-projects-desc">一般教室</div>
-                            </li>
-                            {{--504--}}
-                            <li class="cbp-item web-design general">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/504.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('four.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">504</div>
-                                <div class="cbp-l-grid-projects-desc">一般教室</div>
-                            </li>
-                            {{--509--}}
-                            <li class="cbp-item identity topic">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/509.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('nine.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">509</div>
-                                <div class="cbp-l-grid-projects-desc">專題教室</div>
-                            </li>
-                            {{--510--}}
-                            <li class="cbp-item identity topic">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/510.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">510</div>
-                                <div class="cbp-l-grid-projects-desc">專題教室</div>
-                            </li>
-                            {{--511--}}
-                            <li class="cbp-item graphic computer">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/511.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">511</div>
-                                <div class="cbp-l-grid-projects-desc">電腦教室</div>
-                            </li>
-                            {{--513--}}
-                            <li class="cbp-item graphic computer">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/513.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">513</div>
-                                <div class="cbp-l-grid-projects-desc">電腦教室</div>
-                            </li>
-                            {{--514--}}
-                            <li class="cbp-item identity computer">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/514.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">514</div>
-                                <div class="cbp-l-grid-projects-desc">電腦教室</div>
-                            </li>
-                            {{--516--}}
-                            <li class="cbp-item identity topic">
-                                <div class="cbp-caption">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <img src="img/works/516.jpg" alt="" />
-                                    </div>
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-alignCenter">
-                                            <div class="cbp-l-caption-body">
-
-                                                <a href='{{ route('one.index') }}' class="cbp-l-caption-buttonLeft" > 查看借用情況 </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cbp-l-grid-projects-title">516</div>
-                                <div class="cbp-l-grid-projects-desc">專題教室</div>
-                            </li>
+                                @endforeach
                         </ul>
                     </div>
 

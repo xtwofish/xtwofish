@@ -17,6 +17,7 @@ class CreateClassroomTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('type');
+            $table->string('typename');
             $table->string('photo');
             $table->boolean('status')->default(0);
             $table->rememberToken();
