@@ -49,13 +49,15 @@ Route::prefix('admin')->group(function () {
     Route::post('/login', 'Auth\AdminLoginController@login')->name('admin.login.submit');
 });
 //need group
-Route::get('/admin',['as'=>'admin.index','uses'=> 'AdminController@admin']);
-Route::get('/admin', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
-Route::delete('/admin/{id}',['as'=>'admin.destroy','uses'=>'AdminController@destroy']);
+Route::group(['middleware'=>'auth:admin'], function() {
+    Route::group(['prefix' => 'admin'], function() {
+        Route::get('/', ['as' => 'admin.index', 'uses' => 'AdminController@Show']);
+        Route::delete('/admin/{id}', ['as' => 'admin.destroy', 'uses' => 'AdminController@destroy']);
+    });
+});
 
 Route::get('/history',['as'=>'history.index','uses'=> 'HistoryController@history']);
 Route::get('/history', ['as' => 'history.index', 'uses' => 'HistoryController@Show']);
-
 
 
 Route::delete('applymanager/{id}',['as'=>'applymanager.destroy','uses'=>'ApplymanagerController@destroy']);
