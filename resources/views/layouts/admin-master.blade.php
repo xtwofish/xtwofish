@@ -61,18 +61,19 @@
             </li>
 
         </ul>
+
         <ul class="navbar-nav ml-auto">
-            {{--<li class="nav-item">--}}
-                {{--<a class="nav-link" data-toggle="modal" data-target="#exampleModal">--}}
-                    {{--<i class="fa fa-fw fa-sign-out"></i>登出</a>--}}
-            {{--</li>--}}
+            <li class="nav-item">
+                <li style="color: white;align-content: center;">
+                    您好！<strong>{{ Auth::guard('admin')->user()->name}}</strong>管理者
+                </li>
+            </li>
             <li class="nav-item">
                 <a href="{{ route('logout') }}" class="nav-link"
                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                     <i class="fa fa-fw fa-sign-out"></i>登出
                 </a>
-
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
                 </form>
